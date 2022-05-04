@@ -1,0 +1,11 @@
+.product_nav {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.product_nav_div {
+  display: flex;
+  gap: 1rem;
+}
