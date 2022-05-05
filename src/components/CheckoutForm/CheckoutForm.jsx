@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import CheckoutFormStyles from "./CheckoutForm.module.css";
 
 export default function CheckoutForm(props) {
   const formElm = useRef(null);
@@ -23,12 +24,18 @@ export default function CheckoutForm(props) {
     console.log(formElm.current.elements.address.value);
   }
   return (
-    <form ref={formElm} onSubmit={submitted}>
-      <label htmlFor="fullname">Full name</label>
-      <input required type="text" name="fullname" id="fullname" />
-      <label htmlFor="address">Address</label>
-      <input required type="text" name="address" id="address" />
-      <button type="submit">Pay</button>
+    <form className={CheckoutFormStyles.form} ref={formElm} onSubmit={submitted}>
+      <div className={CheckoutFormStyles.form_div}>
+        <label htmlFor="fullname">Full name</label>
+        <input required type="text" name="fullname" id="fullname" />
+      </div>
+      <div className={CheckoutFormStyles.form_div}>
+        <label htmlFor="address">Address</label>
+        <input required type="text" name="address" id="address" />
+      </div>
+      <button className="button-6" type="submit">
+        Checkout
+      </button>
     </form>
   );
 }

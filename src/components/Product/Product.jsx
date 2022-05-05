@@ -42,7 +42,9 @@ export default function ProductList(props) {
           <p style={{ marginBlockStart: "1rem", marginBlockEnd: ".5rem" }}>
             <strong>{props.product.price}</strong> DKK
           </p>
-          <button onClick={addToBasket}>Add to basket</button>
+          <button className="button-6" onClick={addToBasket}>
+            Add to basket
+          </button>
         </div>
       </div>
     </article>

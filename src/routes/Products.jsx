@@ -24,7 +24,7 @@ export default function Products() {
   return (
     <main className={ProductsStyles.ProductsMain}>
       <ProductList products={products} page={page} setPage={setPage} />
-      <BasketContainer />
+      {/* <BasketContainer /> */}
     </main>
   );
 }

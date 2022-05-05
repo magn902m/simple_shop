@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 import { Link, Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -6,6 +8,7 @@ import Home from "./routes/Home";
 import Products from "./routes/Products";
 import SingleProduct from "./routes/SingleProduct";
 import Basket from "./routes/Basket";
+import NotDone from "./routes/NotDone";
 import BasketContainer from "./components/BasketContainer/BasketContainer";
 import { BasketProvider } from "./contexts/basketContext";
 
@@ -25,8 +28,8 @@ export default function App() {
             {/* <img src="/public/assets/images/logo.svg" alt="Reacting logo" /> */}
           </Link>{" "}
           <Link to="/products">Products</Link>
-          <Link to="/products">About</Link>
-          <Link to="/products">Contact</Link>
+          <Link to="/not_done">About</Link>
+          <Link to="/not_done">Contact</Link>
           <Link to="/basket">Basket</Link>
         </nav>
       </header>
@@ -36,6 +39,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<SingleProduct />} />
           <Route path="/basket" element={<Basket />} />
+          <Route path="/not_done" element={<NotDone />} />
         </Routes>
         {/* <BasketContainer /> */}
       </BasketProvider>

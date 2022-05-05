@@ -1,4 +1,34 @@
 .product_img {
-  width: 50%;
-  grid-row: 1/5;
+  width: 20%;
+}
+
+.basket_card {
+  /* display: flex;
+  flex-direction: column; */
+  gap: 0.5rem;
+  margin-block-end: 2rem;
+  margin-block-start: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.basket_item_func {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket_item_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.basket_item_content {
+  width: 100%;
+}
+
+.add_products {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
 }

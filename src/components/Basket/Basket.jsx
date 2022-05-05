@@ -29,9 +29,23 @@ export default function Basket(props) {
           <BasketItem key={item.id} item={item} />
         ))}
       </article>
-      <p className={BasketStyles.total_price}>
-        Total price: <strong>{sumWithInitial}</strong> DKK
-      </p>
+      <div className={BasketStyles.total_price}>
+        {basket.map((item) => (
+          <table className={BasketStyles.checkout_product}>
+            <tr>
+              <th>{item.productdisplayname}</th>
+            </tr>
+            <tr>
+              <td>
+                {item.price} X {item.amount} = {item.price * item.amount} DKK
+              </td>
+            </tr>
+          </table>
+        ))}
+        <p className={BasketStyles.checkout_product_p}>
+          Total price: <strong>{sumWithInitial}</strong> DKK
+        </p>
+      </div>
     </>
   );
 }
