@@ -1,3 +1,11 @@
+# Simple shop
+
+This is my first project in React, where i tried to make a shop.
+
+## Link
+
+https://simple-shop-react.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
