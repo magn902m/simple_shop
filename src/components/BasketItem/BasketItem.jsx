@@ -35,7 +35,7 @@ export default function BasketItem(props) {
     <article>
       <section
         // key={Math.random()}
-        className={BasketItemStyles.basket_card}
+        className={BasketItemStyles.basket_card_wrapper}
       >
         <img
           className={BasketItemStyles.product_img}

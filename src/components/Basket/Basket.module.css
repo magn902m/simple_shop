@@ -21,3 +21,7 @@
 .checkout_product_p {
   text-decoration: underline;
 }
+
+.basket_card {
+  grid-row: 2 / span 2;
+}

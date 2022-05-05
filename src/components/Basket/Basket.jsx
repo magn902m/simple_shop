@@ -24,7 +24,7 @@ export default function Basket(props) {
           .reduce((previousValue, currentValue) => previousValue + currentValue, 0)}{" "}
         items)
       </h3>
-      <article>
+      <article className={BasketStyles.basket_card}>
         {basket.map((item) => (
           <BasketItem key={item.id} item={item} />
         ))}

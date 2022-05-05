@@ -1,11 +1,9 @@
 .form {
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 3/4;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 8rem;
-  place-content: center;
 }
 
 .form_div {

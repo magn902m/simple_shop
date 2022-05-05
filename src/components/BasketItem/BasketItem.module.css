@@ -2,7 +2,7 @@
   width: 20%;
 }
 
-.basket_card {
+.basket_card_wrapper {
   /* display: flex;
   flex-direction: column; */
   gap: 0.5rem;
