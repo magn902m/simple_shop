@@ -1,5 +1,3 @@
-import { useContext } from "react";
-
 import { Link, Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -9,7 +7,7 @@ import Products from "./routes/Products";
 import SingleProduct from "./routes/SingleProduct";
 import Basket from "./routes/Basket";
 import NotDone from "./routes/NotDone";
-import BasketContainer from "./components/BasketContainer/BasketContainer";
+// import BasketContainer from "./components/BasketContainer/BasketContainer";
 import { BasketProvider } from "./contexts/basketContext";
 
 export default function App() {
@@ -25,8 +23,7 @@ export default function App() {
                 <path d="M520.5 78.1z" />
               </g>
             </svg>
-            {/* <img src="/public/assets/images/logo.svg" alt="Reacting logo" /> */}
-          </Link>{" "}
+          </Link>
           <Link to="/products">Products</Link>
           <Link to="/not_done">About</Link>
           <Link to="/not_done">Contact</Link>

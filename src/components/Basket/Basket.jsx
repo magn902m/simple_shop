@@ -4,7 +4,7 @@ import { BasketContext } from "../../contexts/basketContext";
 import BasketItem from "../BasketItem/BasketItem";
 
 export default function Basket(props) {
-  const { basket, setBasket } = useContext(BasketContext);
+  const { basket } = useContext(BasketContext);
 
   //Total price
   const initialValue = 0;

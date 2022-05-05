@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 //Components
 import ProductList from "../components/ProductList/ProductList";
-import BasketContainer from "../components/BasketContainer/BasketContainer";
+// import BasketContainer from "../components/BasketContainer/BasketContainer";
 
 import ProductsStyles from "./Products.module.css";
 
